@@ -1,0 +1,161 @@
+body{
+
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header header header"
+    "aside main main "
+    "footer footer footer" ;
+
+    grid-template-columns: 1fr 2fr 2fr;
+
+
+
+    font-family: "Roboto";
+    font-size: 1.5em;
+    font-weight: 700;
+
+    
+
+}
+
+.o-nav{
+    grid-area: nav;
+    margin-bottom: .2em;
+    background-color: bisque;
+    padding: .5em;
+    text-align: center;
+}
+
+.o-header{
+    grid-area: header;
+    background-color: #bdd5e2;
+    margin-bottom: .2em;
+    height: 30vw;
+    text-align: center;
+
+}
+
+.o-aside{
+    grid-area: aside;
+    background-color: aquamarine;    
+    padding: 6em 0;
+    margin: 0 .2em 0 0;
+    height: 30vw;
+}
+
+
+.o-main{
+    grid-area: main;
+    background-color: #c2bfdf;    
+    display: flex;
+    justify-content: space-around;
+    padding-right: .5em;     
+}
+
+.o-footer{
+    grid-area: footer;
+    background-color: #bdd5e2;
+    margin-top: .2em;
+    height: 5vw;
+    text-align: center;   
+    height: 30vw;
+    
+}
+
+
+.menu_lateral{
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    
+}
+/*
+.menu_texto{
+    margin-bottom: 1em;
+}
+.lista_item{
+    font-size: .8em;
+    margin-bottom: .5em;   
+   
+}*/
+
+.sessoes_item{
+    height: 15vw;
+    width: 100%;
+    margin-top: 7em;
+    background-color: #bdd5e2;   
+    margin-left: .5em;   
+}
+
+.main-texto{
+   text-align: center;
+      
+    
+}
+
+@media screen and (min-width: 280px ) and (max-width: 560px ) {
+
+    .o-nav{        
+        margin-bottom: .2em;         
+    }
+
+    .o-header{    
+        
+        height: 60vw;
+        text-align: center;
+        
+    
+    }
+
+    .o-main{          
+        flex-wrap: wrap; 
+        grid-column: 1 / span 3;
+        margin: 0 0 0 0;
+        
+    }
+
+    .sessoes_item{
+        height: 50vw;
+        width: 100%;
+        margin-top: .5em;
+        background-color: #bdd5e2;   
+        margin-left: .5em;       
+    }
+
+    .o-aside{
+
+        display: none;
+
+    }
+
+    
+.o-footer{
+    height: 30vw;
+    
+} 
+
+}
+
+@media screen and (min-width: 561px ) and (max-width: 1024px ) {
+
+    .o-main{          
+        flex-wrap: wrap;         
+        margin: 0 0 0 0;
+        align-items: center;
+        
+    }
+
+    .sessoes_item{
+        height: 40%;
+        width: 45%;
+        margin: .5em 0;       
+      
+    }
+
+    .o-footer{
+        height: 30vw;
+        
+    } 
+
+}
