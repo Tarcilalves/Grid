@@ -55,7 +55,7 @@ https://github.com/Tarcilalves/Grid/assets/107896645/67275251-4650-4b9a-968c-ef6
 
 # Acesso ao projeto
 
-[Clique aqui para visitar o site](https://tarcilalves.github.io/AluraPlus/)
+[Clique aqui para visitar o site]https://tarcilalves.github.io/Grid/
 
 
 
